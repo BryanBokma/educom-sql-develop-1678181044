@@ -48,3 +48,25 @@ LIMIT 3;
 -- Example 3
 SELECT * FROM Customers
 FETCH FIRST 3 ROWS ONLY;
+
+-- SQL TOP PERCENT Example (SQL Server/MS Access)
+SELECT TOP 50 PERCENT * FROM Customers;
+
+-- Hetzelfde als bovenstaande alleen dan voor oracle
+SELECT * FROM Customers
+FETCH FIRST 50 PERCENT ROWS ONLY;
+
+-- ADD a WHERE CLAUSE (selecteer de eerste 3 records van Customers tabel waarbij Country Germany is)
+-- Dit voorbeeld is voor SQL Server/MS Access
+SELECT TOP 3* FROM Customers
+WHERE Country='Germany';
+
+-- Example voor MYSQL
+SELECT * FROM Customers 
+WHERE Country='Germany'
+LIMIT 3;
+
+-- Example voor Oracle
+SELECT * FROM Customers
+Where Country='Germany'
+FETCH FIRST 3 ROWS ONLY;
