@@ -1,0 +1,1 @@
+DROP TABLE shippers_duplicate;
