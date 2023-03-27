@@ -1,1 +1,2 @@
-Nog maken
+SELECT ShipperID, CompanyName, Phone
+FROM shippers;
